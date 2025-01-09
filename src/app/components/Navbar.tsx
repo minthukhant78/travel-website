@@ -4,8 +4,8 @@ import * as React from 'react'
 import Link from 'next/link'
 import { Menu, Search, X } from 'lucide-react'
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
-import { Button } from "@/components/ui/button"
+import { Avatar, AvatarFallback, AvatarImage } from "@/app/components/ui/avatar"
+import { Button } from "@/app/components/ui/button"
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,8 +13,8 @@ import {
   DropdownMenuLabel,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import { Input } from '@/components/ui/input'
+} from "@/app/components/ui/dropdown-menu"
+import { Input } from '@/app/components/ui/input'
 import {
   Sheet,
   SheetContent,
@@ -22,13 +22,13 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from '@/components/ui/sheet'
+} from '@/app/components/ui/sheet'
 
 const navItems = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
   { name: 'Services', href: '/services' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'Contact Us', href: '/contact' },
 ]
 
 export function Navbar() {
@@ -43,7 +43,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
-              <span className="text-2xl font-bold text-primary">Logo</span>
+              <span className="text-2xl font-bold text-primary">Min Travel</span>
             </Link>
             <div className="hidden md:block">
               <div className="ml-10 flex items-baseline space-x-4">
